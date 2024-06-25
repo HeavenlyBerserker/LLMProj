@@ -1,3 +1,5 @@
+# This is taken directly from the huggingface nlp course
+
 from datasets import load_dataset
 from transformers import AutoModelForSequenceClassification, BertForSequenceClassification, BertTokenizer, AutoTokenizer, BertModel, TrainingArguments, Trainer
 import torch
