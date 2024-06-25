@@ -1,3 +1,8 @@
+# Textual Entailment Recognition (RTE)
+# RTE("A man inspects the uniform of a figure in some East Asian country."; “The man is sleeping.") ⇒ contradiction.
+# RTE("An older and younger man smiling."; “Two men are smiling and laughing at the cats playing on the floor.") ⇒ neutral.
+# RTE("A soccer game with multiple males playing."; “Some men are playing a sport.") ⇒ entailment.
+
 from datasets import load_dataset
 from transformers import AutoModelForSequenceClassification, BertForSequenceClassification, BertTokenizer, AutoTokenizer, BertModel, TrainingArguments, Trainer
 import torch
